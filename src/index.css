@@ -1,0 +1,77 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+
+
+
+}
+/* CSS for image grid */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.image{
+  position: relative;
+  max-height: 100%;
+ border: 1px solid gray;
+ border-radius: 10px;
+ 
+}
+.image.large {
+  grid-column: span 2; /* Make the first image larger */
+}
+.feature-image {
+  grid-column: span 2; 
+  grid-row: span 2;/* Example border to make it distinct */
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+.check{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.upload{
+  border: 3px dotted gray ;
+  border-width: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
